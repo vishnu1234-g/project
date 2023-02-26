@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="new.css">
+    <title>Phoenix esports</title>
+    <style>
+    body{
+      background-color: black;
+    }
+      #a
+      {
+      position: relative;
+        top: 10px;
+            width: 900px;
+            height: 550px;
+          
+            margin: auto;
+            background-color:rgb(0, 0, 0);
+            
+           
+    }
+</style>
+
+</head>
+<body>
+  <br>
+
+    <div>
+    <img src="esports.png"title="Phoenix esports" height="150px" align="left" class="image1" style="padding-top: 0px; padding-left: 50px; padding-bottom: 0%;">
+    <table>
+        <tr>
+        <td style=" color:rgb(255, 0, 0);padding-left: 150px; padding-top: 20px; padding-bottom: 0%; font-size: 50px;">PHOENIX ESPORTS </td>
+        <tr><td  style="padding-left: 150px; color:rgb(251, 251, 252); padding-bottom: 0%; ">Best esports website in the world</td> 
+    </tr>
+    
+
+</table>
+</div><br><br>
+  
+<ul align="center">
+    <li><a href="project.html">Home</a></li>
+    <li><a href="about.html">About us </a>
+    
+    </li>
+  
+
+    <li><a href="contact.html"> Contact us </a>
+       
+    </li>
+   
+    <li><a href="social.html">Updates  </a></li>
+    <li><a href="#">Registration</a>
+    
+    </li>
+</ul>
+<script>
+    function validation()
+    {
+       var a=document.it.v.value;
+       if(a==""){
+       alert("please enter valid name");
+       window.location.reload();
+       return false;
+   
+       }
+       
+       var b=document.it.i.value;
+       if(b=="")
+       {
+           alert("enter valid email adress");
+       
+         
+          return false;
+       }
+       var c=document.it.s.value;
+       if (c=="")
+       {
+           alert("password should not be empty");
+           return false;
+       }
+      if(c.length<6)
+       {
+           alert("enter atleast 6 numbers");
+           return false;
+       }
+       
+     
+       var d=document.it.h.value;
+       if(d=="")
+       {
+           alert("retype password should not be empty");
+           return false;
+       }
+       
+       if(d!=c)
+       {
+           alert("password should be same");
+           return false;
+           
+       }
+       
+       var e=document.it.n.value;
+       if(e=="")
+       {
+           alert("enter mobile number");
+           return false;
+       }
+       if(isNaN(e))
+       {
+           alert("enter only numbers");
+           return false;
+
+       }
+       if(e.length!=10)
+       {
+           alert("phone number should be 10 numbers");
+       return false;
+   }
+   var w=document.it.w.value;
+   if(w=="")
+   {
+    alert("your squad details must and should");
+    return false;
+   }
+   var q=document.it.q.value;
+   if(q=="")
+   {
+    alert("your game play is required to consider you so upload your recent gameplay");
+    return false;
+   }
+else{
+   return true;
+}
+       
+   }
+         
+</script>
+<center>
+    <h2 style="color:red;">
+        Registration Form for Phoenix Esports
+    </h2>
+</center>
+
+<hr>
+<div id="a">
+<form  name="it" onsubmit="return validation()" action="submit.html">
+<center> <table>
+    <tr>
+        <td style="color: white;" width="200">
+            Your name:
+        </td>
+        
+        <td>
+    <input type="text"/ name="v">
+<br><br>
+        </td>
+    </tr>
+    <tr>
+        <td style="color: white;">
+            Email Id:
+        </td>
+        
+        <td>
+            <input type="text" name="i"/><br><br>
+        </td>
+    </tr>
+    <tr>
+        <td style="color: white;">
+            Password:
+        </td>
+        
+
+    
+        <td>
+            <input type="password" name="s"/><br><br>
+        
+        </td>
+    </tr>
+    <tr>
+        <td style="color: white;">
+            Retype password:
+        </td>
+        
+    
+        <td>
+            <input type="password" name="h"/><br><br>
+
+        </td>
+
+    </tr>
+    <tr>
+      <td style="color: white;">
+
+       Mobile Number:</td>
+       
+       <td>
+        <input type="text" name="n"/><br><br>
+       </td>
+    </tr>
+    <tr>
+        <td style="color: white;">
+        Enter your squad details:
+        </td>
+        <td>
+            <textarea name="w" rows="5" placeholder="enter your team name,your name,your team members names and your all ingame names and roles "></textarea><br><br>
+        </td>
+    </tr>
+    <tr>
+        <td style="color: white;">
+             Upload your gameplay:
+        </td>
+        <td>
+<input type="file" name="q"><br><br>
+        </td>
+    </tr>
+</table>
+<br>
+
+<button type="submit" value="submit"/>submit</button>
+</form></center></div>
+</body>
+</html>
